@@ -21,7 +21,7 @@ app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-  res.render('index', {title: 'Account summary', accounts: accounts});
+  res.render('index', {title: 'Account Summary', accounts});
 });
 app.get('/savings', (req, res) => {
   res.render('account', {account: accounts.savings});
