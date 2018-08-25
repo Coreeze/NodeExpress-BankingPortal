@@ -5,6 +5,8 @@ const express = require('express');
 
 const app = express();
 
+const {accounts, users, writeJSON} = require('/data');
+
 const accountData = fs.readFileSync(
   path.join(__dirname, 'json', 'accounts.json'), 'utf8'
 );
